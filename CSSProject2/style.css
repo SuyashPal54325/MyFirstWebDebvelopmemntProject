@@ -1,0 +1,199 @@
+/* CSS reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*CSS Variables*/
+:root{
+    --navbar-height:59px;
+}
+
+/* navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* position: absolute;
+    top: 0px; */
+    position: relative;
+    /* justify-content: center; */
+}
+
+/* Navigation Bar: logo and image  */
+#logo{
+margin: 34px 45px;
+
+}
+
+#logo img{
+height: 48px;
+margin: 10px 1px;
+}
+
+/* Navigation Bar: List styling */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 6px;
+    border-radius: 10px;  
+    text-decoration: none;
+    margin: 8px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px ;
+    justify-content: center;
+    align-items: center;
+    height: 440px;
+}
+#home::before{
+    content: "";
+    background: url('../pexels-ella-olsson-1640774.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+}
+#home h1{
+    color: #593f3f;
+    text-align: center;
+    font-size: 2.5rem;
+}
+#home p{
+    color: #593f3f;
+    text-align: center;
+    font-size: 1.3rem;  
+}
+/* Services section */
+#services-container{
+    border: 4px solid green;
+}
+#services{
+    margin: 19px;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 4px 8px;
+    border-radius: 30px;
+    background-color: #e9e2e2;
+}
+#services .box img{
+    height: 156px;
+    display: block;
+    margin: auto;
+}
+/* Client section  */
+#client-section{
+height: 344px;
+position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg3.webp') no-repeat center/cover ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    margin: 5px 23px;
+    padding: 8px 5px;
+}
+#client img{
+    height:144px;
+}
+/* Contact Section  */
+#contact{
+    position: relative;
+}
+#contact::before{
+content: "";
+position: absolute;
+background: url('../contact.webp') no-repeat center center/cover;
+width: 100%;
+height: 100%;
+opacity: .7;
+z-index: -1; 
+}
+#contact-box{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom:34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+footer{
+    background-color: black;
+    color:white;
+    padding: 9px 20px;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 2.1rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.1rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid black;
+    background-color: rgb(90, 124, 124);
+    border-radius: 14px;
+    color: #ffffff;
+    margin: 14px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #bc9a9a;
+}
+.center{
+    text-align: center;
+}
